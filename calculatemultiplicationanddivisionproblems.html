@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate multiplication and division problems!!!</title>
+
+	<h3> Calculate multiplication problems! </h3>
+</head>
+
+<h5>Type the numbers you would like to multiply and click submit.</h5>
+
+<input type="text" name="1st number multiplication" id= "1st number multiplication">
+x
+<input type="text" name="2nd number multiplication" id="2nd number multiplication">
+
+<br>
+
+<input type="button" name="Submit!" value="Submit!" onclick="calc1()">
+
+<p id="result">
+	
+</p>
+
+<script type="text/javascript">
+	
+function calc1()
+
+{ 
+	var m = document.getElementById('1st number multiplication').value;
+
+	var n = document.getElementById('2nd number multiplication').value;
+
+
+	var result =  m * n;
+
+	document.getElementById ('result').innerHTML = result;
+
+
+}
+
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+
+<h3> Calculate division problems! </h3>
+</head>
+
+<h5>Type the numbers you would like to divide and click submit.</h5>
+
+<input type="text" name="dividend" id= "dividend">
+/
+<input type="text" name="divisor" id="divisor">
+
+<br>
+
+<input type="button" name="Submit!" value="Submit!" onclick="calc2()">
+
+<p id="answer">
+	
+</p>
+
+<script type="text/javascript">
+	
+function calc2()
+
+{ 
+	var d = document.getElementById('dividend').value;
+
+	var e = document.getElementById('divisor').value;
+
+
+	var answer =  d/e;
+
+	document.getElementById ('answer').innerHTML = answer;
+
+
+}
+
+</script>
+
+
+
+
+
+</html>
